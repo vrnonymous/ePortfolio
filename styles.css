@@ -1,0 +1,125 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    /* Apply a background image to the body */
+    background-image: url('giphy.gif'); /* Replace with your GIF file name */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #ffffff; /* Set text color for readability */
+}
+
+/* Header Styles */
+header {
+    background-color: #000000;
+    color: #b006b9;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Footer Styles */
+footer {
+    position: absolute;
+    left: 1000px; /* Adjust the left distance as needed */
+    bottom: 530px; /* Adjust the bottom distance as needed */
+}
+
+/* Make links bright blue */
+a {
+    color: #f069f9; /* Bright blue color for links */
+    text-decoration: none; /* Remove underline by default */
+    font-weight: bold; /* Make the links bold */
+}
+
+/* Change link color when hovered */
+a:hover {
+    color: #0056b3; /* Darker blue on hover */
+}
+
+/* Social Media Menu Styles */
+.menu {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: transparent;
+    z-index: 999;
+}
+
+.toggle {
+    cursor: pointer;
+    background-color: #333;
+    color: white;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.social-icons {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.social-icons li {
+    margin-right: 10px;
+    animation: fadeIn 0.5s var(--i) forwards;
+}
+
+.social-icons li a {
+    text-decoration: none;
+    color: var(--clr);
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+/* Style the button */
+#popup-button {
+    background-color: #650183;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+/* Style the popup menu container */
+#popup-menu {
+    display: none;
+    position: absolute;
+    top: 200px; /* Adjust the distance from the button as needed */
+    right: 0;
+    background-color: #000000;
+    box-shadow: 0 2px 4px rgba(138, 0, 180, 0.2);
+    z-index: 999;
+}
+
+/* Style the menu items */
+#popup-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#popup-menu ul li {
+    padding: 10px;
+    text-align: center;
+}
+
+#popup-menu ul li a {
+    text-decoration: none;
+    color: #c500f7;
+    display: block;
+}
+
+#popup-menu ul li a:hover {
+    background-color: #56035b;
+    color: #fff;
+}
