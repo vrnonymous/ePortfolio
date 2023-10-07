@@ -21,9 +21,10 @@ header {
 
 /* Footer Styles */
 footer {
-    position: absolute;
-    left: 1000px; /* Adjust the left distance as needed */
-    bottom: 530px; /* Adjust the bottom distance as needed */
+    background-color: #000000;
+    color: #b006b9;
+    text-align: center;
+    padding: 20px;
 }
 
 /* Make links bright blue */
@@ -81,6 +82,7 @@ a:hover {
         opacity: 1;
     }
 }
+
 /* Style the button */
 #popup-button {
     background-color: #650183;
@@ -94,8 +96,8 @@ a:hover {
 #popup-menu {
     display: none;
     position: absolute;
-    top: 200px; /* Adjust the distance from the button as needed */
-    right: 0;
+    top: 80px; /* Adjust the distance from the button as needed */
+    right: 20px;
     background-color: #000000;
     box-shadow: 0 2px 4px rgba(138, 0, 180, 0.2);
     z-index: 999;
@@ -122,4 +124,24 @@ a:hover {
 #popup-menu ul li a:hover {
     background-color: #56035b;
     color: #fff;
+}
+
+/* Media Query for Mobile */
+@media screen and (max-width: 768px) {
+    /* Adjust styles for smaller screens */
+    footer {
+        position: static; /* Reset the position */
+    }
+    
+    /* Center the social media menu for mobile */
+    .menu {
+        right: 50%; /* Center horizontally */
+        transform: translateX(50%); /* Center horizontally */
+    }
+
+    /* Adjust the popup menu position for mobile */
+    #popup-menu {
+        top: 60px; /* Adjust the distance from the button for mobile */
+        right: 10px; /* Adjust the right distance for mobile */
+    }
 }
