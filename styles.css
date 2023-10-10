@@ -3,12 +3,10 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    /* Apply a background image to the body */
     background-image: url('giphy.gif'); /* Replace with your GIF file name */
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: repeat; /* Repeat the image both horizontally and vertically */
     background-attachment: fixed;
-    color: #ffffff; /* Set text color for readability */
+    color: #ffffff;
 }
 
 /* Header Styles */
@@ -143,5 +141,24 @@ a:hover {
     #popup-menu {
         top: 60px; /* Adjust the distance from the button for mobile */
         right: 10px; /* Adjust the right distance for mobile */
+    }
+}
+
+/* Bug Animation */
+.bug {
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    position: absolute;
+    border-radius: 50%;
+    animation: bugWalk 1s linear infinite; /* Faster animation: 1 second */
+}
+
+@keyframes bugWalk {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(100%);
     }
 }
